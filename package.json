@@ -1,0 +1,37 @@
+{
+  "name": "collabcode",
+  "version": "1.0.0",
+  "description": "Real-time collaborative coding platform",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:init": "tailwindcss init -p",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lily9814/CollabCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lily9814/CollabCode/issues"
+  },
+  "homepage": "https://github.com/Lily9814/CollabCode#readme",
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "firebase": "^11.6.0",
+    "next": "^15.2.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17"
+  }
+}
