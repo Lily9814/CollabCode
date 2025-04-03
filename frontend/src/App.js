@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from '../src/components/NavBar.js';
+import Footer from '../src/components/Footer.js'
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // ✅ Updated here
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          "Hello this is a test"
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Routes> {/* ✅ Use Routes instead of Switch */}
+          <Route path="/" element={<Home />} /> {/* ✅ Use element= instead of component= */}
+        </Routes> 
+        <Footer />
+      </Router>
     </div>
   );
 }
 
 export default App;
+
