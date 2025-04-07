@@ -7,15 +7,17 @@
   }
   
   .navbar .leftSide {
-    flex: 50%;
+    flex: 0%;
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    justify-content: flex-start;
+    padding-left: 0;
   }
   
   .navbar .leftSide img {
-    width: 70px;
+    width: 10px;
+    margin: 0;
   }
   
   .navbar .rightSide {
@@ -30,6 +32,7 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 20px;
+    align-items: center;
   }
   
   .navbar .rightSide button {
